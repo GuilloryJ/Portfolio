@@ -114,7 +114,6 @@ ul, label
 .singleScreen
 {
 	padding-top:11vh; /*Offset for sticky heading*/
-	height:80vh;
 }
 
 .menu
@@ -184,7 +183,6 @@ nav a
 	position:relative;
 	transition: transform 1s;
 	box-shadow:0px 5px 0 0 rgba(0, 0, 0, 0.1);
-	display: inline-block;
 }
 
 .card::before
@@ -283,4 +281,20 @@ input:-webkit-autofill::first-line
 #skillsStart
 {
 	height:105vh;
+}
+
+#Projects span.card
+{
+	width:40%;
+	height:23em;
+	margin:2em 1em;
+	min-width:20em;
+}
+
+.projectCards
+{
+	display:flex;
+/*	flex-direction:left;*/
+	justify-content:center;
+	flex-wrap: wrap;
 }
