@@ -10,7 +10,8 @@ set_error_handler("var_dump");
 		$message = $_POST["message"];
 
 		$toEmail = "buscow@gmail.com";
-		$mailHeaders = "From: " . $name . "<". $emailAddress .">\r\n";
+		$mailHeaders = "From: jackisbuilding.com <postmaster@jackisbuilding.com>\r\n";
+		$mailHeaders .= "Reply to: " . $name . "<". $emailAddress .">\r\n";
 		mail($toEmail, $subject, $message, $mailHeaders);
 }
 ?>
